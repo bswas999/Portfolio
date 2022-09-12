@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+body nav ul{
+    display:flex;
+    color: white;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;   
+}
+nav ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: bolder;
+    background-color: red;
+    padding:10px 20px;
+    border-radius: 5px;
+}
+nav ul li.sign-btn{
+    margin: 40px 50px;
+}
+
+.container{
+    color:white;
+    text-align: center;
+    margin: 90px;
+}
+.container h2{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.container h3.middle-text{
+    margin-top: -20px;
+    font-size: 25px;
+}
+
+.container form{
+    display: flex;
+    justify-content: center;
+}
+.container form input{
+    height: 50px;
+    padding:10px;
+    width: 50%;
+}
+.container form .submit-btn{
+    background-color: red;
+    border:none;
+    color: white;
+    margin-right:2px ;
+}
+
+.container input:focus{
+    outline: none;
+    padding:10px;
+}
+
+.container-banner{
+    background-color: black; 
+    margin-top: -20px;
+    color: white;
+    border-top:10px solid grey;
+}
+
+.container-banner .row{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 40px;
+}
+.container-banner .row .col-2.text-col{
+    margin: auto;
+    width: 40%;
+}
+.container-banner h1{
+    font-size: 50px;
+}
+.container-banner h3{
+    font-weight:300;  
+    font-size:25px;
+}
+.container-banner footer .row{
+    width: 60%;
+    margin: auto;
+}
+.container-banner .row .col-4 ul{
+    list-style:none;
+}
+.container-banner .row .col-4 ul li{
+    margin-top: 18px;
+}
+
+.container-banner .row .col-4 ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight:300;
+    color: grey;
+}
+.container-banner .row .col-4 ul li a:hover{
+    
+    text-decoration: underline;
+}
+
+.footer-text{
+    color: grey;
+    padding: 18px;
+    margin: auto 315px;
+}
+.footer-text a{
+    text-decoration: none;
+    color: grey;
+}
+.footer-text a:hover{
+    text-decoration: underline;
+}

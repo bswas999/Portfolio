@@ -1,0 +1,46 @@
+body table{
+    height: 70vh;
+    width: 30%;
+    padding: 20px;
+    border-radius:20px ;
+    background-color:rgb(138, 138, 138);
+}
+table td input{
+    width: 100%;
+    font-size:17px;
+    font-weight: 500;    
+    height: 100%;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+table td input.function-btn{
+    background-color: rgb(1, 102, 116);
+    color: white;
+}
+table td input.num-btn{
+    background-color: rgb(66, 55, 53);
+    color:whitesmoke
+}
+table td input.num-btn:hover{
+    background-color: rgb(161, 161, 161);
+}
+table td input.function-btn:hover{
+    background-color: rgb(74, 186, 201);
+}
+table td input.input-text{
+    text-align: right;
+}
+@media(max-width:450px){
+    body table{
+        width: 100%;
+        
+    }
+}
+@media (min-width:450px) {
+        body table{
+            width: 50%;
+        }
+}

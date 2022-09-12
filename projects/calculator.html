@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | HTML-CSS-JS</title>
+    <link rel="stylesheet" href="calculator.css">
+    
+</head>
+<body>
+    <div class="title">
+            <h2>Calculator Project using HTML CSS and JS</h2>
+    </div>
+    <table>
+        <tr class="input-field" >
+            <td colspan="5">
+                <input type="text" name="result-show"style="margin-bottom: 10px;" class="input-text" id="result">
+            </td>
+        </tr>
+        <tr class="buttons">
+           <td><input type="button" value="AC" name="clear" class="function-btn" onclick="clearScreen()"></td> 
+           <td><input type="button" value="7" name="7" class="num-btn" onclick="acceptValue('7')"></td> 
+           <td><input type="button" value="8" name="8" class="num-btn" onclick="acceptValue('8')"></td> 
+           <td><input type="button" value="9" name="9" class="num-btn"onclick="acceptValue('9')"></td> 
+           <td><input type="button" value="X" name="X" class="function-btn"onclick="acceptValue('*')"></td> 
+        </tr>
+        
+        <tr class="buttons">
+            <td><input type="button" value="+/-" name="clear" class="function-btn"onclick="acceptValue('+/-')"></td> 
+            <td><input type="button" value="4" name="4" class="num-btn" onclick="acceptValue('4')"></td> 
+            <td><input type="button" value="5" name="5" class="num-btn"  onclick="acceptValue('5')"></td> 
+            <td><input type="button" value="6" name="6" class="num-btn"onclick="acceptValue('6')"></td> 
+            <td><input type="button" value="/" name="X" class="function-btn"onclick="acceptValue('/')"></td> 
+         </tr>
+         <tr class="buttons">
+            <td><input type="button" value="%" name="clear" class="function-btn"onclick="acceptValue('%')"></td> 
+            <td><input type="button" value="1" name="1" class="num-btn"onclick="acceptValue('1')"></td> 
+            <td><input type="button" value="2" name="2" class="num-btn"onclick="acceptValue('2')"></td> 
+            <td><input type="button" value="3" name="3" class="num-btn"onclick="acceptValue('3')"></td> 
+            <td><input type="button" value="+" name="X" class="function-btn"onclick="acceptValue('+')"></td> 
+         </tr>
+         <tr class="buttons">
+            <td><input type="button" value="=" name="equals" class="function-btn"onclick="calculate()"></td>
+            <td colspan="2" ><input type="button" value="0" name="7" class="num-btn"onclick="acceptValue('7')"></td> 
+            <td><input type="button" value="." name="dec" class="num-btn"onclick="acceptValue('.')"></td> 
+            <td><input type="button" value="-" name="X" class="function-btn"onclick="acceptValue('-')"></td> 
+         </tr>
+    </table>
+        <script>
+            function clearScreen(){
+                document.getElementById("result").value="";//this is how we set value to blank;
+            }
+            function acceptValue(val){//data entered by the user is passed as parameter inside the function,,
+                    //whenever user presses the button with this function in their event handling, then in that case
+                    //this method is initialized along with the function.
+                    document.getElementById("result").value+=val;//this add the newly pressed key into the input field
+
+
+            }
+            function calculate(){
+                
+                var a = document.getElementById("result").value;
+                    var b = eval(a);//this is responsble for calculating the datas.
+                    document.getElementById("result").value = b;
+            }
+        </script>
+</body>
+</html> 

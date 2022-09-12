@@ -1,0 +1,166 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        
+</head>
+
+<body>
+    <section>
+        <div class="owl-carousel owl-theme">
+
+            <div class="item">
+                <div class="image">
+                    <img src="nike-1.jpg" alt="" width="100px">
+                </div>
+                <h1>Shoe 1</h1>
+                <h3>Nike</h3>
+                <h3>Rs.950</h3>
+                <h4>Mens</h4>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="nike-2.jfif" alt="" width="100px">
+                </div>
+                <h1>Shoe 1</h1>
+                <h3>Nike</h3>
+                <h3>Rs.950</h3>
+                <h4>Mens</h4>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="nike-3.jfif" alt="" width="100px">
+                </div>
+                <h1>Shoe 1</h1>
+                <h3>Nike</h3>
+                <h3>Rs.950</h3>
+                <h4>Mens</h4>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="nike-4.jpg" alt="" width="100px">
+                </div>
+                <h1>Shoe 1</h1>
+                <h3>Nike</h3>
+                <h3>Rs.950</h3>
+                <h4>Mens</h4>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="nike-5.jfif" alt="" width="100px">
+                </div>
+                <h1>Shoe 1</h1>
+                <h3>Nike</h3>
+                <h3>Rs.950</h3>
+                <h4>Mens</h4>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="nike-6.jfif" alt="" width="100px">
+                </div>
+                <h1>Shoe 1</h1>
+                <h3>Nike</h3>
+                <h3>Rs.950</h3>
+                <h4>Mens</h4>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="nike-7.webp" alt="" width="100px">
+                </div>
+                <h1>Shoe 1</h1>
+                <h3>Nike</h3>
+                <h3>Rs.950</h3>
+                <h4>Mens</h4>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="nike-8.jfif" alt="" width="100px">
+                </div>
+                <h1>Shoe 1</h1>
+                <h3>Nike</h3>
+                <h3>Rs.950</h3>
+                <h4>Mens</h4>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="nike-9.webp" alt="" width="100px">
+                </div>
+                <h1>Shoe 1</h1>
+                <h3>Nike</h3>
+                <h3>Rs.950</h3>
+                <h4>Mens</h4>
+            </div>
+
+            <div class="item">
+                <div class="image">
+                    <img src="nike-10.jfif" alt="" width="100px">
+                </div>
+                <h1>Shoe 1</h1>
+                <h3>Nike</h3>
+                <h3>Rs.950</h3>
+                <h4>Mens</h4>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            responsiveClass: true,
+
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: true
+                },
+                600: {
+                    items: 3,
+                    nav: false
+                },
+                1000: {
+                    items: 4,
+                    nav: true,
+
+                }
+            },
+            autoplay: true,
+            autoplayTimeout: 1500,
+            autoplayHoverPause: true
+            });
+            $('.play').on('click', function () {
+            owl.trigger('play.owl.autoplay', [1000])
+            })
+            $('.stop').on('click', function () {
+                owl.trigger('stop.owl.autoplay')
+            });
+    </script>
+</body>
+
+</html>

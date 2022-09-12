@@ -1,0 +1,43 @@
+<div class="container-tv">
+        <div class="row">
+            <div class="col-2">
+                <h1>Enjoy on your TV.</h1>
+                <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
+            </div>
+            <div class="col-2">
+                <img src="./images/netflix-gif.gif" alt="" height="400px" width="500px">
+            </div>
+        </div>
+    </div>
+  
+
+  .container-tv{
+    border-top:10px solid grey;
+    background-color: black;
+    color: white;
+}
+.container-tv .row{
+    display: flex;
+    justify-content: space-around;
+}
+.row .col-2{
+    margin: auto;
+}
+.hover-me{
+    background-color: red;
+    color: white;
+    padding:20px;
+}
+.hover-btn{
+    background-color: red;
+    color:green;
+    width: 200px;
+    height: 300px;
+
+}
+
+.hover-btn:hover{
+    background-color: yellow;
+    transition:all 2s ;
+    color: black;
+}
